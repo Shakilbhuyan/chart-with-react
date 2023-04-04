@@ -80,15 +80,16 @@ const Dashboard = () => {
     return (
         <div>
             <LineChart
-            width={500}
-            height={300}
-            data={students}
+                width={500}
+                height={300}
+                data={students}
             >
-             <Line dataKey="Physics"></Line>
-             <Line dataKey="Chemistry" stroke='#8884d8'></Line>
-             <XAxis dataKey="name"></XAxis>
-             <YAxis></YAxis>
-             <Tooltip />
+                <CartesianGrid></CartesianGrid>
+                <Line dataKey="Physics"></Line>
+                <Line dataKey="Chemistry" stroke='#8884d8'></Line>
+                <XAxis dataKey="name"></XAxis>
+                <YAxis></YAxis>
+                <Tooltip />
             </LineChart>
         </div>
     );
